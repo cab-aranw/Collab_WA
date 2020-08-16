@@ -16,5 +16,16 @@ namespace TestForm
         {
             InitializeComponent();
         }
+
+        private void buttonOpen_Click(object sender, EventArgs e)
+        {
+            SecondForm oSF = new SecondForm();
+            oSF.ShowDialog();
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
