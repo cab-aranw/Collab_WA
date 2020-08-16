@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.ExitButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // ExitButton
+            // 
+            this.ExitButton.Location = new System.Drawing.Point(180, 129);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(151, 74);
+            this.ExitButton.TabIndex = 0;
+            this.ExitButton.Text = "Exit";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // SecondForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ExitButton);
+            this.Name = "SecondForm";
             this.Text = "SecondForm";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button ExitButton;
     }
 }
